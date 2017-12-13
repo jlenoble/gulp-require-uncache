@@ -2,7 +2,7 @@
   "name": "gulp-require-uncache",
   "description": "Remove passed-through files from Node require cache",
   "version": "0.0.0",
-  "keywords": [],
+  "keywords": ["gulpplugin", "gulp", "require", "cache", "uncache"],
   "author": {
     "name": "Jason Lenoble",
     "email": "jason.lenoble@gmail.com"
