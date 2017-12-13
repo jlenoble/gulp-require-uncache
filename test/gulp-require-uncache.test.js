@@ -1,12 +1,22 @@
-import Muter, {captured} from 'muter';
-import {expect} from 'chai';
-import GulpRequireUncache from '../src/gulp-require-uncache';
+import testGulpProcess from 'test-gulp-process';
 
-describe('Testing GulpRequireUncache', function () {
-  const muter = Muter(console, 'log'); // eslint-disable-line new-cap
+describe('Testing Gulp plugin uncache', function () {
+  it(`Ref shows file is cached by require`, testGulpProcess({
+    sources: 'src/**/*.js',
+    gulpfile: 'test/gulpfiles/uncache.js',
 
-  it(`Class GulpRequireUncache says 'Hello world!'`, captured(muter, function () {
-    new GulpRequireUncache();
-    expect(muter.getLogs()).to.equal('Hello world!\n');
+    messages: [
+      `Finished 'default' after`,
+    ],
+  }));
+
+  it(`Plugin removes file from require cache`, testGulpProcess({
+    sources: 'src/**/*.js',
+    gulpfile: 'test/gulpfiles/uncache.js',
+    task: 'remove',
+
+    messages: [
+      `Finished 'remove' after`,
+    ],
   }));
 });
