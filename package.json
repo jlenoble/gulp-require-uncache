@@ -1,0 +1,48 @@
+{
+  "name": "gulp-require-uncache",
+  "description": "Remove passed-through files from Node require cache",
+  "version": "0.0.0",
+  "keywords": [],
+  "author": {
+    "name": "Jason Lenoble",
+    "email": "jason.lenoble@gmail.com"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.5.0"
+  },
+  "main": "lib/gulp-require-uncache.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jlenoble/gulp-require-uncache.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jlenoble/gulp-require-uncache/issues"
+  },
+  "homepage": "https://github.com/jlenoble/gulp-require-uncache#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "autoreload-gulp": "*",
+    "babel-plugin-add-module-exports": "*",
+    "babel-preset-es2015": "*",
+    "chai": "*",
+    "del": "*",
+    "eslint-config-google": "*",
+    "gulp": "git://github.com/gulpjs/gulp.git#4.0",
+    "gulp-babel": "*",
+    "gulp-eslint": "*",
+    "gulp-mocha": "*",
+    "gulp-rename": "*",
+    "gulp-replace": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-wrap": "*",
+    "markdown-include": "*",
+    "muter": "*",
+    "plumb-gulp": "*"
+  },
+  "peerDependencies": {}
+}
