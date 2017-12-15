@@ -2,11 +2,12 @@
 
 Remove passed-through files from Node require cache
 
+  * [Background](#background)
   * [Basic usage](#basic-usage)
   * [License](#license)
 
 
-## Background ! heading
+## Background
 
 Sometimes some pipeline depend on particular Js files. This means that when they are modified, the behavior of the pipeline changes. Then you have either to restart your gulp process, or you must uncache those dependencies on the fly prior to using again the pipeline.
 
